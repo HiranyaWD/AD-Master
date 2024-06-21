@@ -709,3 +709,16 @@ footer .copyright{
   margin: 0;
 }
 }
+@media(min-width:1600px){
+  .section-p1{
+    padding: 80px ;
+  }
+  #category {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+}
