@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Registration Form | CodingLab </title>
+    <link rel="stylesheet" href="form.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Mobile Phones</div>
+    <div class="content">
+      <form action="email.php" method="POST" enctype="multipart/form-data">
+        <div class="user-details">
+          <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1">
+            <input type="radio" name="gender" id="dot-2">
+            
+            <span class="gender-title">Condition</span>
+            <div class="category">
+              <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">Used</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">Brand new</span>
+            </label>
+            </div>
+          </div>
+          <div class="input-box">
+            <span class="details">Brand</span>
+            <input type="text" placeholder="Ex : Iphone " required>
+          </div>
+          <div class="input-box">
+            <span class="details">Model</span>
+            <input type="text" placeholder="Ex : 14 Pro max" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Edition</span>
+            <input type="text" placeholder="Ex : 2023" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Description</span>
+            <input  type="text"  id="des1" placeholder="Enter product details" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Price</span>
+            <input type="text" placeholder="Enter Price (Rs.)" required>
+          </div>
+          
+         <!-- Photo upload section -->
+<div class="input-box-photo-upload-section">
+  <span class="details">Add up to 5 photos</span>
+  <div id="photo-previews" class="photo-upload-container">
+      <!-- Initial empty photo upload boxes -->
+      <div class="photo-upload-box">
+          <label for="photo-input-1">Add a photo</label>
+          <input type="file" id="photo-input-1" name="photos" accept="image/*" onchange="previewImage(event, 1)">
+      </div>
+      <div class="photo-upload-box">
+          <label for="photo-input-2">Add a photo</label>
+          <input type="file" id="photo-input-2" name="photos" accept="image/*" onchange="previewImage(event, 2)">
+      </div>
+      <div class="photo-upload-box">
+          <label for="photo-input-3">Add a photo</label>
+          <input type="file" id="photo-input-3" name="photos" accept="image/*" onchange="previewImage(event, 3)">
+      </div>
+      <div class="photo-upload-box">
+          <label for="photo-input-4">Add a photo</label>
+          <input type="file" id="photo-input-4" name="photos" accept="image/*" onchange="previewImage(event, 4)">
+      </div>
+      <div class="photo-upload-box">
+          <label for="photo-input-5">Add a photo</label>
+          <input type="file" id="photo-input-5" name="photos" accept="image/*" onchange="previewImage(event, 5)">
+      </div>
+  </div>
+  <small>You must upload at least one photo</small>
+</div>
+<div class="contact">
+      <h3>Contact details</h3>
+      <div class="input-box">
+        <span class="details">Phone Number</span>
+        <div class="phone-number-container">
+            <select id="country-code" required>
+                <option value="+94">+94 (LK)</option>
+                
+                <!-- Add more country codes as needed -->
+            </select>
+            <input type="tel" id="phone-number" placeholder="Enter phone number" required pattern="\d+" title="Please enter a valid phone number consisting of numbers only."> 
+        </div>
+    </div>
+    <div class="input-box">
+      <span class="details">Full Name</span>
+      <input type="text" placeholder="Enter Full name" required>
+    </div>
+    <div class="input-box">
+      <span class="details">Email</span>
+      <input type="text" placeholder="Enter Email" required>
+    </div>
+  </div>
+    
+
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="img.js"></script>
+ 
+
+</body>
+</html>
+

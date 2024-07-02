@@ -4,7 +4,7 @@ function loadSubcategories(category) {
 
   const subcategories = {
       electronics: [
-          '<i class="fas fa-mobile-alt"></i> Mobile Phones',
+          '<i class="fas fa-mobile-alt" onclick="loadForm(\'mobile-phones\')"></i> Mobile Phones',
           '<i class="fas fa-headphones-alt"></i> Mobile Phone Accessories',
           '<i class="fas fa-laptop"></i> Computers & Tabs',
           '<i class="fas fa-keyboard"></i> Computer Accessories',
@@ -93,4 +93,17 @@ function loadSubcategories(category) {
           subcategoriesList.appendChild(li);
       });
   }
+
+  function loadForm(subcategory) {
+    if (subcategory === 'mobile-phones') {
+        fetch('form.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector('.subcategories').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading form:', error));
+    }
+  
 }
+}
+
