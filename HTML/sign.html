@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="sign.css">
    
     
-    <title>Sign in | Sign up</title>
+    <title>Ad Master</title>
 </head>
 
 <body>
     <section id="header">
         <a href="#"><img class="logo" src="img/Untitled_design__5_-removebg-preview.png"></a>
-
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
         <div>
             <ul id="navbar">
                 <li><a href="index.html" >Home</a></li>
@@ -43,9 +45,7 @@
                 <li><a href="cart.html">Post An Ad</a></li>
             </ul>
         </div>
-        <div id="mobile">
-            <i id="bar" class="fas fa-outdent"></i>
-        </div>
+        
     </section>
 
     <section id="sign">
@@ -79,7 +79,7 @@
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Password">
                 <a href="#">Forget Your Password?</a>
-                <button>Sign In</button>
+                <button onclick="window.location.href='index.html';">Sign In</button>
             </form>
         </div>
         <div class="toggle-container">
@@ -99,7 +99,8 @@
     </div>
 </section>
 
-    <script src="sign.js"></script>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>

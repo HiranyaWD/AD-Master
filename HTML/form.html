@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <title> Responsive Registration Form | CodingLab </title>
+    <title>Ad Master</title>
     <link rel="stylesheet" href="form.css">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
@@ -31,23 +31,23 @@
           </div>
           <div class="input-box">
             <span class="details">Brand</span>
-            <input type="text" placeholder="Ex : Iphone " required>
+            <input type="text" id="txt" placeholder="Ex : Iphone " required>
           </div>
           <div class="input-box">
             <span class="details">Model</span>
-            <input type="text" placeholder="Ex : 14 Pro max" required>
+            <input type="text" id="txt" placeholder="Ex : 14 Pro max" required>
           </div>
           <div class="input-box">
             <span class="details">Edition</span>
-            <input type="text" placeholder="Ex : 2023" required>
+            <input type="text" id="txt" placeholder="Ex : 2023" required>
           </div>
           <div class="input-box">
             <span class="details">Description</span>
-            <input  type="text"  id="des1" placeholder="Enter product details" required>
+            <input  type="text" id="txt" id="des1" placeholder="Enter product details" required>
           </div>
           <div class="input-box">
             <span class="details">Price</span>
-            <input type="text" placeholder="Enter Price (Rs.)" required>
+            <input type="text" id="txt" placeholder="Enter Price (Rs.)" required>
           </div>
           
          <!-- Photo upload section -->
@@ -93,22 +93,22 @@
     </div>
     <div class="input-box">
       <span class="details">Full Name</span>
-      <input type="text" placeholder="Enter Full name" required>
+      <input type="text" id="txt" placeholder="Enter Full name" required>
     </div>
     <div class="input-box">
       <span class="details">Email</span>
-      <input type="text" placeholder="Enter Email" required>
+      <input type="text" id="txt" placeholder="Enter Email" required>
     </div>
   </div>
     
 
-        <div class="button">
+        <div class="button" onclick="window.location.href='index.html';">
           <input type="submit" value="Register">
         </div>
       </form>
     </div>
   </div>
-  <script src="img.js"></script>
+  <script src="script.js"></script>
  
 
 </body>

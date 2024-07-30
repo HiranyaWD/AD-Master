@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Ad Master</title>
 
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -18,10 +18,12 @@
     <body>
         <section id="header">
             <a href="#"><img class="logo" src="img/Untitled_design__5_-removebg-preview.png"></a>
-
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
             <div>
                 <ul id="navbar">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html" >Home</a></li>
                     <li><a href="shop.html">All ads</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropbtn">Category</a>
@@ -43,12 +45,10 @@
                     </li>
                     <li><a href="index.html"><i class="fa-sharp fa-solid fa-location-dot"></i></a></li>
                     <li><a href="index.html"><i class="fa-sharp fa-solid fa-bell"></i></a></li>
-                    <li><a href="cart.html">Post An Ad</a></li>
+                    <li><a href="cart.html" class="active">Post An Ad</a></li>
                 </ul>
             </div>
-            <div id="mobile">
-                <i id="bar" class="fas fa-outdent"></i>
-            </div>
+            
         </section>
 
         <div class="container">
@@ -93,6 +93,7 @@
                     <!-- Subcategories will be loaded here -->
                 </ul>
             </div>
+            
         </div>
 
         <footer class="section-p1">
@@ -141,8 +142,8 @@
             </div>
         </footer>
 
-        <script src="script2.js"></script>
-
+       
+        <script src="script.js"></script>
     </body>
 
 </html>

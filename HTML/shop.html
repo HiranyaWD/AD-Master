@@ -5,8 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>All Ads
-        </title>
+        <title>Ad Master</title>
         <script src="https://kit.fontawesome.com/3903f7a459.js" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="style.css">
@@ -15,7 +14,9 @@
     <body>
         <section id="header">
             <a href="#"><img class="logo" src="img/Untitled_design__5_-removebg-preview.png"></a>
-
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
             <div>
                 <ul id="navbar">
                     <li><a href="index.html" >Home</a></li>
@@ -43,16 +44,14 @@
                     <li><a href="cart.html">Post An Ad</a></li>
                 </ul>
             </div>
-            <div id="mobile">
-                <i id="bar" class="fas fa-outdent"></i>
-            </div>
+            
         </section>
 
         <section id="page-header">
             
             <h2>Stay Home</h2>
             <p>We can help you to provide your Things.</p>
-            <button>Post Your Ad Now</button>
+            <button onclick="window.location.href='cart.html';">Post Your Ad Now</button>
         </section>
 
         <section id="ads" class="section-1">
@@ -202,7 +201,7 @@
             </div>
             <div class="form">
                 <input type="text" placeholder="Your E-mail Address">
-                <button class="normal">Sign Up</button>
+                <button class="normal" onclick="window.location.href='sign.html';">Sign Up</button>
             </div>
         </section>
         <footer class="section-p1">

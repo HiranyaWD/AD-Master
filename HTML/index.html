@@ -6,20 +6,23 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Advertiser</title>
-        <script src="https://kit.fontawesome.com/3903f7a459.js" crossorigin="anonymous"></script>
-
+        <title>Ad Master</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/3903f7a459.js" crossorigin="anonymous"></script>
+        
     </head>
 
     <body>
         <section id="header">
             <a href="#"><img class="logo" src="img/Untitled_design__5_-removebg-preview.png"></a>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
 
             <div>
-                <ul id="navbar">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="shop.html">All ads</a></li>
+                <ul id="navbar" class="navbar">
+                    <li><a href="index.html"  onclick="toggleMenu()" class="active">Home</a></li>
+                    <li><a href="shop.html"  onclick="toggleMenu()">All ads</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropbtn">Category</a>
                         <div class="dropdown-content">
@@ -36,16 +39,15 @@
                             
                         </div>
                     </li>
-                    <li><a href="sign.html">Sign In / Sign Up</a>
+                    <li><a href="sign.html"  onclick="toggleMenu()">Sign In / Sign Up</a>
                     </li>
-                    <li><a href="index.html"><i class="fa-sharp fa-solid fa-location-dot"></i></a></li>
-                    <li><a href="index.html"><i class="fa-sharp fa-solid fa-bell"></i></a></li>
-                    <li><a href="cart.html">Post An Ad</a></li>
+                    <li><a href="index.html"  onclick="toggleMenu()"><i class="fa-sharp fa-solid fa-location-dot"></i></a></li>
+                    <li><a href="index.html"  onclick="toggleMenu()"><i class="fa-sharp fa-solid fa-bell"></i></a></li>
+                    <li><a href="cart.html"  onclick="toggleMenu()">Post An Ad</a></li>
                 </ul>
             </div>
-            <div id="mobile">
-                <i id="bar" class="fas fa-outdent"></i>
-            </div>
+           
+            
         </section>
 
         <section id="hero">
@@ -53,7 +55,7 @@
             <h2>Promote your Ads</h2>
             <h1>Advertise with Us</h1>
             <p>And boost your brand Reach & Engaged your Audience effectively</p>
-            <button>Post Your Ad Now</button>
+            <button onclick="window.location.href='cart.html';">Post Your Ad Now</button>
         </section>
        
         <section id="category" class="section-1">
@@ -175,7 +177,7 @@
         <section id="banner" class="section-m1">
             <h4>Advertising</h4>
             <h2>Space <span>Available</span></h2>
-            <button class="normal">Post Your First Ad</button>
+            <button class="normal" onclick="window.location.href='cart.html';">Post Your First Ad</button>
         </section>
 
         <section id="ads" class="section-1">
@@ -252,7 +254,7 @@
         <section id="banner" class="section-m1">
             <h4>Advertising</h4>
             <h2>Space <span>Available</span></h2>
-            <button class="normal">Post Your First Ad</button>
+            <button class="normal" onclick="window.location.href='cart.html';">Post Your First Ad</button>
         </section>
 
         <section id="news" class="section-p1 section-m1">
@@ -262,7 +264,7 @@
             </div>
             <div class="form">
                 <input type="text" placeholder="Your E-mail Address">
-                <button class="normal">Sign Up</button>
+                <button class="normal" onclick="window.location.href='sign.html';">Sign Up</button>
             </div>
         </section>
 
@@ -311,7 +313,7 @@
                 <p>@2024, All rights reserved Advertiser.com </p>
             </div>
         </footer>
-
+       
         <script src="script.js"></script>
     <!-- Code injected by live-server -->
 <script>

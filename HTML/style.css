@@ -145,11 +145,10 @@ body {
   left: 20px;
 
 }
-#mobile{
-  display: none;
-  align-items: center;
-}
 
+.menu-icon{
+  display: none;
+}
 
 #hero{
   background-image: url("img/YOUR\ \(1\).png");
@@ -192,7 +191,7 @@ body {
   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
   border: 1px solid #cce7d0;
   border-radius: 5px;
-  margin: 15px 25px;
+  margin: 10px 50px;
 }
 
 #category .fe-box:hover{
@@ -549,7 +548,9 @@ footer .copyright{
   font-size: 1em;
   color: #999;
 }
-
+.navbar.show{
+  display: block
+}
 
 
 
@@ -634,6 +635,7 @@ footer .copyright{
   }
   #header{
     padding: 10px 30px;
+    width: 375px;
   }
   h1{
     font-size: 38px;
@@ -644,13 +646,15 @@ footer .copyright{
   #hero{
     padding: 0 20px;
     background-position: 55%;
+    
   }
   #category{
     justify-content: space-between;
+    
   }
   #category .fe-box{
     width:155px;
-    margin: 15px 25px;
+    margin: 10px 15px;
   }
   #ads .pro{
     width: 100%;
@@ -664,7 +668,17 @@ footer .copyright{
   #news .form{
     width: 100%;
   }
+  .menu-icon{
+    display: initial;
+    margin-right: -80px;
+  }
+  .navbar.show{
+    display: block;
+  }
   /*single Ads*/
+  #ads{
+    width: auto;
+  }
   #prodetails {
     display: flex;
     flex-direction: column;
@@ -709,6 +723,9 @@ footer .copyright{
   list-style: none;
   padding: 0;
   margin: 0;
+}
+#navbar .active{
+  right: 10px;
 }
 }
 @media(min-width:1600px){
